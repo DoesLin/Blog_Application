@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.media.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="514.0" prefWidth="638.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TextField fx:id="texteCompte" layoutX="253.0" layoutY="48.0" />
+      <MenuButton fx:id="compte" layoutX="476.0" layoutY="49.0" mnemonicParsing="false" text="Compte">
+        <items>
+          <MenuItem fx:id="seDeconnecter" mnemonicParsing="false" onAction="#seDeconnecter" text="Se deconnecter" />
+          <MenuItem fx:id="gererCompte" mnemonicParsing="false" onAction="#gererCompte" text="Gestion de compte" />
+        </items>
+      </MenuButton>
+      <Label layoutX="296.0" layoutY="93.0" text="Message">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Button fx:id="index" layoutX="53.0" layoutY="46.0" mnemonicParsing="false" onAction="#allerIndex" text="YCBlog">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Button>
+      <Label layoutX="59.0" layoutY="128.0" text="Titre">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="titre" layoutX="135.0" layoutY="125.0" prefHeight="25.0" prefWidth="446.0" />
+      <Label layoutX="59.0" layoutY="168.0" text="MotCles">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="motCles" layoutX="134.0" layoutY="165.0" prefHeight="25.0" prefWidth="446.0" />
+      <Label layoutX="59.0" layoutY="200.0" text="Texte">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="texte" layoutX="134.0" layoutY="210.0" prefHeight="232.0" prefWidth="200.0" />
+      <Button fx:id="modifierMess" layoutX="149.0" layoutY="467.0" mnemonicParsing="false" onAction="#modifierMess" text="Modifier votre message" />
+      <Button fx:id="annuler" layoutX="461.0" layoutY="467.0" mnemonicParsing="false" onAction="#annuler" text="Annuler" />
+      <Button fx:id="ajouterImag" layoutX="475.0" layoutY="342.0" mnemonicParsing="false" onAction="#ajouterImag" text="AjouterImages" />
+      <TabPane fx:id="imagesVue" layoutX="377.0" layoutY="379.0" prefHeight="64.0" prefWidth="200.0" />
+      <TabPane fx:id="liensVue" layoutX="482.0" layoutY="240.0" prefHeight="95.0" prefWidth="106.0" />
+      <Button fx:id="ajouterLien" layoutX="370.0" layoutY="342.0" mnemonicParsing="false" onAction="#ajouterLien" text="AjouterLien" />
+      <TextField fx:id="nomLien" layoutX="363.0" layoutY="209.0" prefHeight="25.0" prefWidth="113.0" promptText="NomLien" />
+      <TextArea fx:id="texteLien" layoutX="362.0" layoutY="239.0" prefHeight="95.0" prefWidth="113.0" promptText="TexteLien" />
+      <Button fx:id="effacerLiens" layoutX="483.0" layoutY="209.0" mnemonicParsing="false" onAction="#effacerLiens" text="EffacerLiens" />
+   </children>
+</AnchorPane>

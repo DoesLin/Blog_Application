@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="514.0" prefWidth="638.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TextField fx:id="textItem" layoutX="54.0" layoutY="109.0" prefHeight="25.0" prefWidth="341.0" promptText="Quel genre de message voulez-vous ?" />
+      <Label layoutX="52.0" layoutY="177.0" text="Vos resultats">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Button fx:id="index" layoutX="53.0" layoutY="46.0" mnemonicParsing="false" onAction="#allerIndex" text="YCBlog">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="seConn" layoutX="356.0" layoutY="46.0" mnemonicParsing="false" onAction="#allerConn" text="Se connecter" />
+      <Label layoutX="476.0" layoutY="51.0" text="ou" />
+      <Button fx:id="sInsc" layoutX="509.0" layoutY="46.0" mnemonicParsing="false" onAction="#allerInsc" text="S'inscrire" />
+	  <TableView fx:id="affiche" layoutX="51.0" layoutY="234.0" prefHeight="200.0" prefWidth="520.0">
+        <columns>
+          <TableColumn fx:id="titr" prefWidth="67.0" text="Titre" />
+          <TableColumn fx:id="text" prefWidth="96.0" text="Texte" />
+            <TableColumn fx:id="util" prefWidth="130.0" text="Utilisateur" />
+            <TableColumn fx:id="motCles" prefWidth="130.0" text="MotCles" />
+            <TableColumn fx:id="date" prefWidth="96.0" text="Date" />
+        </columns>
+      </TableView>      <Button fx:id="chercher" layoutX="454.0" layoutY="108.0" mnemonicParsing="false" onAction="#allerResu" text="Chercher" />
+   </children>
+</AnchorPane>

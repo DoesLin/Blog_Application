@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="514.0" prefWidth="638.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TextField fx:id="textItem" layoutX="54.0" layoutY="109.0" prefHeight="25.0" prefWidth="341.0" promptText="Quel genre de message voulez-vous ?" />
+      <TextField fx:id="texteCompte" layoutX="253.0" layoutY="48.0" />
+      <MenuButton fx:id="compte" layoutX="476.0" layoutY="49.0" mnemonicParsing="false" text="Compte">
+        <items>
+          <MenuItem fx:id="seDeconnecter" mnemonicParsing="false" onAction="#seDeconnecter" text="Se deconnecter" />
+          <MenuItem fx:id="gererCompte" mnemonicParsing="false" onAction="#gererCompte" text="Gestion de compte" />
+        </items>
+      </MenuButton>
+      <Label layoutX="52.0" layoutY="177.0" text="Mes messages">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Button fx:id="index" layoutX="53.0" layoutY="46.0" mnemonicParsing="false" onAction="#allerIndex" text="YCBlog">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Button>
+     <TableView fx:id="affiche" layoutX="51.0" layoutY="234.0" prefHeight="200.0" prefWidth="520.0">
+        <columns>
+          <TableColumn fx:id="titr" prefWidth="67.0" text="Titre" />
+          <TableColumn fx:id="text" prefWidth="96.0" text="Texte" />
+            <TableColumn fx:id="parcImag" prefWidth="160.0" text="Parcours des images" />
+            <TableColumn fx:id="motCles" prefWidth="100.0" text="MotCles" />
+            <TableColumn fx:id="date" prefWidth="96.0" text="Date" />
+        </columns>
+      </TableView>
+      <Button fx:id="chercher" layoutX="454.0" layoutY="108.0" mnemonicParsing="false" onAction="#allerResu" text="Chercher" />
+      <Button fx:id="visualiser" layoutX="492.0" layoutY="175.0" mnemonicParsing="false" onAction="#visualiser" text="Visualiser" />
+      <Button fx:id="ecrire" layoutX="122.0" layoutY="452.0" mnemonicParsing="false" onAction="#ecrire" text="Ecrire" />
+      <Button fx:id="supprimer" layoutX="419.0" layoutY="452.0" mnemonicParsing="false" onAction="#supprimer" text="Supprimer" />
+      <Button fx:id="modifier" layoutX="277.0" layoutY="452.0" mnemonicParsing="false" onAction="#modifier" text="Modifier" />
+   </children>
+</AnchorPane>

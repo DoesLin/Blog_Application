@@ -1,0 +1,8 @@
+fr.polytech.tours.hibernate.application
+fr.polytech.tours.hibernate.application.controleur
+fr.polytech.tours.hibernate.application.controleur.dao
+fr.polytech.tours.hibernate.application.controleur.erreur
+fr.polytech.tours.hibernate.application.controleur.gestion
+fr.polytech.tours.hibernate.application.controleur.invite
+fr.polytech.tours.hibernate.application.controleur.utilisateur
+fr.polytech.tours.hibernate.application.modele
